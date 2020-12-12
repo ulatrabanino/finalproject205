@@ -20,12 +20,11 @@ def image_data(image_id):
             height = img.height
             break
     
-    return render_template('finalproject.html', image = img, img_mode = mode, img_myformat = myformat, img_width = width, img_height = height, myimage_info = image_info)
-
+    return render_template('project.html', image = img, img_mode = mode, img_myformat = myformat, img_width = width, img_height = height, myimage_info = image_info)
 #the finalproject.html is a placeholder until I know the actual name of the file.
 def filter_selection():
     img = Image.open(f'images/user_image.jpg') #this is a placeholder
-    filter_choice = ["Sepia", "Negative", "Grayscale", "Thumbnail", "None"]
+    filter_choice = ['Sepia', 'Negative', 'Grayscale', 'Thumbnail', 'None']
     if filter_choice == 'Sepia':
 
         def sepia(pixel):
@@ -67,7 +66,9 @@ def filter_selection():
             target_x += 1
         img = target
     
-    img.show()
+    return render_template('finalproject.html', image = img, sepia = filter_choice[0], negative = filter_choice[1], grayscale = filter_choice[2], thumbnail = filter_choice[3], none = filter_choice[4])
+
+    # img.show()
 
 
 win = MyWindow()
