@@ -76,7 +76,7 @@ def main():
                 target_x += 1
             img = target
         
-        return render_template('finalproject.html', image = img, sepia = filter_choice[0], negative = filter_choice[1], grayscale = filter_choice[2], thumbnail = filter_choice[3], none = filter_choice[4])
+        return render_template('imageuploadtest.html', image = img, user_selection = user_selection)
 
     # img.show()
 
