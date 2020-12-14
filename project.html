@@ -26,10 +26,9 @@
           </div>
         </div>
         <div>
-        <form method="POST" action="/" style="text-align: center; margin-left: 500px; padding:15px; margin-top: 245px; width: 450px;">
+        <form method="POST" action="/" style="text-align: center">
             {{ form.csrf_token }}
             {{ form.user_selection }} 
-            {{ form.user_selection(size=32) }}
             <br>
             <br>
         </div>
