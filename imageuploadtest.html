@@ -1,18 +1,35 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Image Upload</title>
-  </head>
-  <body>
-    <h1>Pick an image to upload!</h1>
-    <form method="POST" action="" enctype="multipart/form-data">
-      <p><input type="file" name="file"></p>
-      <p><input type="submit" value="Submit"></p>
-    </form>
-    <hr>
-    {% for file in files %}
-    <img src="{{ url_for('upload', filename=file) }}" style="width: 64px">
-    {% endfor %}
-    <hr>
-  </body>
+<html lang="en">
+    <head>
+        <title>Image Manipulator</title>
+    </head>
+    <body>
+
+        <!-- Image Upload  -->
+        <h1>Upload an image:</h1>
+        <form method="POST" action="" enctype="multipart/form-data">
+          <p><input type="file" name="file"></p>
+          <p><input type="submit" value="Submit"></p>
+        </form>
+        <hr>
+        {% for file in files %}
+        <img src="{{ url_for('upload', filename=file) }}" style="width: 64px">
+        {% endfor %}
+        
+        <!-- Image Manipulation  -->
+        <hr>
+        <label for="manipulation">Choose a filter:</label>
+        <select name="manipulation" id="manipulation">
+            <option value="Sepia">Sepia</option>
+            <option value="Negative">Negative</option>
+            <option value="Grayscale">Grayscale</option>
+            <option value="Thumbnail">Thumbnail</option>
+            <option value="None">None</option>
+        </select>
+        
+        <form method="POST" action="" enctype="application/x-www-form-urlencoded">
+          <p><input type = "submit" value = "Manipulation"></p>
+        </form>
+        
+      </body>
 </html>
