@@ -13,11 +13,11 @@ How to run the program:
 3. Activate the virtual enivronment using this command: (make sure to replace the project205env with your virtual enivronment name) .\project205env\Scripts\Activate.ps1
 4. Enter in the following commands (press enter after each line)
   
-  $env:FLASK_APP = "project.py" 
+    $env:FLASK_APP = "project.py" 
   
-  $env:FLASK_DEBUG = "1"
+    $env:FLASK_DEBUG = "1"
   
-  flask run
+    flask run
   
 5. A website link will appear in the terminal. Read the instructions in the terminal on how to open it
 
