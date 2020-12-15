@@ -1,3 +1,7 @@
+<!-- CST 205
+     Ula Trabanino, Dylan Leonard, Julian Diaz, Kegan Rettig
+     12/14/2020 
+     Website for the python code in which one can upload an image and then choose from the given filter options, to which they click the manipulation button and then the results.html page shows the image when it has been filtered. As well as saves it to one's computer.-->
 <!doctype html>
 <html lang="en">
     <head>
@@ -21,12 +25,14 @@
         {% block content %}
         <div style="height: 70px;">
           <div>
-            <h1 style="text-align:center;">Please type in one of the following (case sensitive):</h1>
-            <p>sepia, negative, grayscale, or none</p>
+            <h1 style="text-align:center;">Please type in one of the following:</h1>
+            <h2 style="text-align:center;">Sepia, Negative, Grayscale, or None</h2>
           </div>
         </div>
         <div>
+          <br><br><br>
         <form method="POST" action="/" style="text-align: center">
+
             {{ form.csrf_token }}
             {{ form.user_selection }} 
             <br>
@@ -34,7 +40,7 @@
         </div>
         {% endblock %}
         <form method="POST" action="" enctype="application/x-www-form-urlencoded">
-          <p><input type = "submit" value = "Manipulation"></p>
+          <p style="text-align:center;"><input type = "submit" value = "Manipulation"></p>
         </form>
       </body>
 </html>
