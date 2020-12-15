@@ -10,8 +10,9 @@ How to run the program:
 
 1. Put all files in a directory in a code editor of your choice (we used VS Code)
 2. Create a virtual enivronment in that directory and install all of the import and from technologies (install technologies using this command: python -m pip install)
-3. Activate the virtual enivronment using this command: (make sure to replace the project205env with your virtual enivronment name) .\project205env\Scripts\Activate.ps1
-4. Enter in the following commands (press enter after each line)
+3. Create two separate folders, one called templates and the other called uploads. Store the main html file in the templates folder. 
+4. Activate the virtual enivronment using this command: (make sure to replace the project205env with your virtual enivronment name) .\project205env\Scripts\Activate.ps1
+5. Enter in the following commands (press enter after each line)
   
       $env:FLASK_APP = "project.py" 
   
@@ -19,7 +20,7 @@ How to run the program:
   
       flask run
   
-5. A website link will appear in the terminal. Read the instructions in the terminal on how to open it
+6. A website link will appear in the terminal. Read the instructions in the terminal on how to open it
 
 GitHub Link: https://github.com/ulatrabanino/finalproject205
 
