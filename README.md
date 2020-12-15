@@ -14,7 +14,7 @@ How to run the program:
 4. Activate the virtual enivronment using this command: (make sure to replace the project205env with your virtual enivronment name) .\project205env\Scripts\Activate.ps1
 5. Enter in the following commands (press enter after each line)
   
-      $env:FLASK_APP = "project.py" 
+      $env:FLASK_APP = "finalproject.py" 
   
       $env:FLASK_DEBUG = "1"
   
