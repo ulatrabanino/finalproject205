@@ -1,7 +1,7 @@
 #Image Manipulation Project
-#Team Members: Kegan Rettig, Ula Trabanino, Dylan Leonard, Julian Diaz
-#CST 205
-#12/18/20
+Team Members: Kegan Rettig, Ula Trabanino, Dylan Leonard, Julian Diaz
+CST 205
+12/18/20
 
 #How to run the program:
 
