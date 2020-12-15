@@ -14,7 +14,9 @@ How to run the program:
 4. Enter in the following commands (press enter after each line)
   
   $env:FLASK_APP = "project.py" 
+  
   $env:FLASK_DEBUG = "1"
+  
   flask run
   
 5. A website link will appear in the terminal. Read the instructions in the terminal on how to open it
