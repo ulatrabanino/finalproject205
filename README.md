@@ -10,7 +10,7 @@ How to run the program:
 
 1. Put all files in a directory in a code editor of your choice (we used VS Code)
 2. Create a virtual enivronment in that directory and install all of the import and from technologies (install technologies using this command: python -m pip install)
-3. Create two separate folders, one called templates and the other called uploads. Store the main html file in the templates folder. 
+3. Create two separate folders, one called templates and the other called uploads. Store imagedisplay.html and imageupload.html in the templates folder. Place the jpg image in the directory you created in step one. 
 4. Activate the virtual enivronment using this command: (make sure to replace the project205env with your virtual enivronment name) .\project205env\Scripts\Activate.ps1
 5. Enter in the following commands (press enter after each line)
   
