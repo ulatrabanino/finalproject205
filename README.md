@@ -1,4 +1,4 @@
-#Image Manipulation Project
+Image Manipulation Project
 
 Team Members: Kegan Rettig, Ula Trabanino, Dylan Leonard, Julian Diaz
 
@@ -6,7 +6,7 @@ CST 205
 
 12/18/20
 
-#How to run the program:
+How to run the program:
 
 1. Put all files in a directory in a code editor of your choice (we used VS Code)
 2. Create a virtual enivronment in that directory and install all of the import and from technologies (install technologies using this command: python -m pip install)
