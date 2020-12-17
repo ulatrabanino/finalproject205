@@ -11,10 +11,12 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from PIL import Image
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'csumb-otter'
 bootstrap = Bootstrap(app)
+cwd = os.getcwd()
 
 filter_choice= ['Sepia', 'Negative', 'Grayscale', 'Thumbnail', 'None']
 
@@ -70,10 +72,11 @@ def filter_selection(filter_choice):
         img = target
 
     #this saves the filtered photo as new_photo.jpg to the user's computer
-    img = img.save('new_photo.jpg')
+    img = img.save('static/images/new_photo.jpg')
 
     #this takes you to the results page that should display the filtered image
-    return render_template('imagedisplay.html', user_image = img)
+    # return render_template('imagedisplay.html', user_image = img)
+    return img
 #this is the first page or the main page and links to the html 
 @app.route('/', methods=('GET','POST'))
 def main_page():
