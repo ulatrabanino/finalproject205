@@ -8,15 +8,14 @@ CST 205
 
 How to run the program:
 
-1. Put all files in a directory in a code editor of your choice (we used VS Code)
-2. Create a virtual enivronment in that directory and install all of the import and from technologies (install technologies using this command: python -m pip install)
-3. Create two separate folders, one called templates and the other called uploads. Store imagedisplay.html, imageupload.html, and project.html in the templates folder. Place the jpg image in the directory you created in step one. 
+1. Create a directory and virtual environment based on that newly created directory
+2. Place choice images in this directory folder path: static/images
+3. Place html files in a templates folder directory
+4. Place python file in the overall directory
 4. Activate the virtual enivronment using this command: (make sure to replace the project205env with your virtual enivronment name) .\project205env\Scripts\Activate.ps1
 5. Enter in the following commands (press enter after each line)
   
-      $env:FLASK_APP = "finalproject.py" 
-  
-      $env:FLASK_DEBUG = "1"
+      $env:FLASK_APP = "finalproject.py"
   
       flask run
   
