@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Image Manipulator</title>
+    </head>
+    <body>
+      <div>
+        <h1>Please choose from one of the 3 images</h1>
+        <img src="static/images/choice1.jpg" height = 250 width = 250>
+        <img src="static/images/choice2.jpg" height = 250 width = 250>
+        <img src="static/images/choice3.jpg" height = 250 width = 250>
+      </div>
+        {% block content %}
+        <div style="height: 70px;">
+          <div>
+            <h1 style="text-align:left;">Please type in your image you want and what type of manipulation you want to do: </h1>
+            <h2 style="text-align:left;">These are your choices</h2>
+            <h2 style="text-align:left;">Sepia, Negative, Grayscale, Thumbnail, or None</h2>
+            <h3 style="text-align:left;">Meme, Flaming Heart, Apex</h3>
+          </div>
+        </div>
+        <div>
+          <br><br><br>
+        <form method="POST" action="/" style="text-align: center">
+            {{ form.csrf_token }}
+            {{ form.user_selection.label }}
+            {{ form.user_selection }} 
+            <br>
+            <br>
+            {{ form.csrf_token }}
+            {{ form.user_selection_img.label }}
+            {{ form.user_selection_img }}
+        </div>
+        {% endblock %}
+        <form method="POST" action="" enctype="application/x-www-form-urlencoded">
+          <p style="text-align:center;"><input type = "submit" value = "Manipulation"></p>
+        </form>
+      </body>
+</html>
